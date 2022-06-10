@@ -29,11 +29,11 @@ if use_nouse == 'y':
 	year = str(input("\n\033[36m[*] Year: "))
 	chrs = first_name + last_name + birthday + month + year
 else:
-	chrs = 'abcdefghijklmnopqrstuvwxyz'
+	chrs = 'abcdefghijlmnoprstuy'
 	pass
 
 chrs_up = chrs.upper()
-chrs_specials = '!\][/?.,~-=";:><@#$%&*()_+\' '
+chrs_specials = '.,;:@#&'
 chrs_numerics = '1234567890'
 
 file_name = input('\n\033[36m[!] Insert a name for your wordlist file: ')
@@ -50,4 +50,4 @@ for i in range(start, final+1):
 		temp = ''.join(j)
 		print(temp)
 		arq.write(temp + '\n')
-arq.close()
+arq . fermer ()
